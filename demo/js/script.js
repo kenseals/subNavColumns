@@ -2,7 +2,7 @@
 $(function() {
 	
 	// Init subNavColumns
-	$('.sub-nav').subNavColumns({
+	$('.main-nav').subNavColumns({
 		minLength:'5'
 	});
 
