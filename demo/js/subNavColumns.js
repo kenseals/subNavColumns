@@ -20,8 +20,9 @@
 			var $subNavParent = $subNav.parent('li');
 	    	var $l = $subNav.children('li').length;
 	    	var $mL = settings.minLength;
+	    	var $L = Math.round($l / $mL);
 	    	var $x = $this.children('li').length;
-	    	var $n = ($x / 2);
+	    	var $n = Math.round($x / 2);
 	    	var $y = $subNavParent.index();
 
 	    	// If subnav is longer than y, add .nav-columns class
@@ -29,9 +30,8 @@
 				$subNav.addClass('nav-columns');
 			};
 
-			if ($l > ($mL * 2)) {
-				$subNav.addClass('two');		
-			}
+			// Add class for # of columns
+			$subNav.addClass('$L');
 
 			// If main nav item is on second half of nav, apply class
 			if ($y > $n) {
