@@ -8,7 +8,7 @@
 
 		// Create some defaults, extending them with any options that are provided
 	    var settings = $.extend( {
-			'min-length': '5' // Number of list items after which columns will be added
+			'minLength': '5' // Number of list items after which columns will be added
 	    }, options);
 
 	    // Maintain Chainability
